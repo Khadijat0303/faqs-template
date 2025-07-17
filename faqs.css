@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(244, 231, 244);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    font-family: "roboto";
+    font-weight: 800;
+}
+    
+
+.box {
+    display: flex;
+    height: 70vh;
+    width: 35vw;
+    background-color: white;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    top: 20%;
+    left: 33%;
+    padding: 15px 20px 0px 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.first {
+    width: 30px;
+    height: 30px;
+    
+}
+h1 {
+    font-size: 40px;
+    display: inline;
+    padding-left: 10px;
+
+}
+.texts div { 
+    margin: 30px 0px;
+    color: rgb(47, 5, 47);
+}
+.minus {
+    width: 12px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+.light {
+    font-weight: normal;
+    color: rgb(175, 136, 175);
+    
+}
+.flex {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    
+
+}
+.flex div {
+    align-items: center;
+    border-top: 1px solid rgb(238, 226, 238);
+    padding-top: 23px;
+    margin: 3px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.plus {
+border-radius: 50%;
+height: 15px;
+width: 15px;
+}
+
+
+@media only screen and (min-width:1025px){
+    .box {
+    font-size: 14px;
+    display: flex;
+    width: 40%;
+    height: 70%;
+    }
+    body::before {
+        content: "COMPUTER SIZE"; 
+ }
+    
+}
+
+
+@media only screen and (max-width: 1025px){
+    
+.box{
+    font-size: 10px;
+    display: flex;
+    height: 70%;
+    width: 40%;
+}
+
+    body::before {
+        content: "TABLET SIZE"; 
+ }
+}
+
+@media only screen and (max-width: 530px){
+    
+.box{
+    font-size: 14px;
+    display: flex;
+    height: 70%;
+    width: 50%;
+}
+
+    body::before {
+        content: "MOBILE SIZE"; 
+ }
+
+}
